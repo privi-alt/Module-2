@@ -10,81 +10,92 @@
 This repository contains the code, data analysis, and project files for Module 2 of BME 2315: Computational Biomedical Engineering.
 
 ### Project Goal
+
 The goal of this project is to analyze natural-history data from patients with facioscapulohumeral muscular dystrophy (FSHD) and evaluate candidate biomarkers and clinical outcome measures for use in an early-stage clinical trial.
 
 The project focuses on identifying measurements that are sensitive to disease progression while also considering consistency, feasibility, and clinical relevance.
 
+Our analysis focuses particularly on MRI fat fraction and quantitative STIR as potential imaging biomarkers for monitoring FSHD progression.
+
 ### Disease Background
 
-Symptoms:
-Facioscapulohumeral muscular dystrophy (FSHD) is a progressive genetic disorder where severity and progression varies depending on the individual. Common symptoms include weaknesses in the face, shoulder, hip, lower leg and upper arm. Facial weaknesses appear early on, making movements like smiling, whistling and closing the eyes difficult. Weakness around the shoulder blades is an indicator of FSHD, resulting in protruded shoulder blades and causing difficulty while performing regular activities with the shoulders. Other muscular areas can affect balance, mobility due to foot drop, and seating, creating an uncomfortable quality of life for individuals living with FSHD. Roughly 20% of people living with FSHD use a wheelchair to help with mobility. Other side effects that accompany FSHD conditions include respiratory complications, blindness, and dysphagia. While symptoms vary widely among individuals, most develop symptoms from their teens, and currently there is no established cure for FSHD.(Muscular Dystrophy Association, n.d.)
+Symptoms: Facioscapulohumeral muscular dystrophy (FSHD) is a progressive genetic disorder where severity and progression varies depending on the individual. Common symptoms include weaknesses in the face, shoulder, hip, lower leg and upper arm. Facial weaknesses appear early on, making movements like smiling, whistling and closing the eyes difficult. Weakness around the shoulder blades is an indicator of FSHD, resulting in protruded shoulder blades and causing difficulty while performing regular activities with the shoulders. Other muscular areas can affect balance, mobility due to foot drop, and seating, creating an uncomfortable quality of life for individuals living with FSHD. Roughly 20% of people living with FSHD use a wheelchair to help with mobility. Other side effects that accompany FSHD conditions include respiratory complications, blindness, and dysphagia. While symptoms vary widely among individuals, most develop symptoms from their teens, and currently there is no established cure for FSHD (Muscular Dystrophy Association, n.d.-c).
 
-Standard-of-care-treatments:
-Current standard-of-care treatments for FSHD focus on managing symptoms and therapy due to no effective developed medication. Physical therapy and pain management through anti-inflammatory drugs are available to help improve mobility, muscular functions and reduce pain, however results vary depending on the stage of the disease. Scapulothoracic fusion surgery can benefit patients by improving shoulder related movements. Since conditions vary between individuals, respiratory, opticial, and hearing functions are carefully monitored as certain FSHD conditions may impact pulmonary, retinal vascular diseases, and hearing complications. While clinical trials have identified the pathology and etiology of the disease, the effective treatment remains unknown.(Aguirre et al., 2023)
+Standard-of-care treatments: Current standard-of-care treatments for FSHD focus on managing symptoms and therapy due to no effective developed medication. Physical therapy and pain management through anti-inflammatory drugs are available to help improve mobility, muscular functions and reduce pain, however results vary depending on the stage of the disease. Scapulothoracic fusion surgery can benefit patients by improving shoulder-related movements. Since conditions vary between individuals, respiratory, optical, and hearing functions are carefully monitored as certain FSHD conditions may impact pulmonary, retinal vascular, and hearing function (Aguirre et al., 2023).
 
-Disease progression and prognosis:
-FSHD progresses slowly in individuals, often with symptoms appearing from early twenties and further developing over time. The rate and severity of FSHD is dependent on the individual and varies. As researched above, the progression of FSHD is shown within the severity of symptoms, however these changes do not affect life expectancy and a majority of patients maintain a normal lifespan. In patients with FSHD, weakness and loss of muscle mass occurs over time, commonly affecting facial muscles first and later spreading to other muscle groups causing increased axillary fat and arm muscle wasting. In severe cases where individuals are unable to maintain mobility due to muscle weakness, 20% will eventually require a wheelchair. (Muscular Dystrophy Association, n.d.)
+Disease progression and prognosis: FSHD progresses slowly in individuals, often with symptoms appearing from the early twenties and further developing over time. The rate and severity of FSHD varies between individuals. Weakness and loss of muscle mass can occur over time and affect additional muscle groups. In severe cases where individuals are unable to maintain mobility due to muscle weakness, some patients eventually require a wheelchair (Muscular Dystrophy Association, n.d.-a).
 
-Biological mechanisms:
-FSHD is the result of a regulatory mutation caused by the deletion of D4Z4 repeats on chromosome 4q. This deletion causes the transcription and overexpression of the DUX4 gene which is highly toxic. The overactivation of DUX4 instead of suppression in skeletal muscle, causes atrophy and protein degradation, which leads to irregular muscle function.This mechanism is hereditary, and is classified as an autosomal dominant trait. Potential therapies aim to reduce DUX4 expression or block its harmful effects on skeletal muscle cells. DUX4 target gene biomarkers in FSHD affected muscle could indicate levels of limb fat fraction. However, researchers continue investigating dependable biomarkers to monitor FSDH disease and optimal treatments. (Banerji et al., 2023; Hamel & Tawil, 2018)
+Biological mechanisms: FSHD is associated with abnormal expression of the DUX4 gene. In FSHD1, changes involving the D4Z4 repeat region on chromosome 4q contribute to inappropriate DUX4 expression in skeletal muscle. DUX4 activity contributes to muscle-cell dysfunction and degeneration. Potential therapies aim to reduce DUX4 expression or block its harmful effects. Researchers continue investigating biomarkers that can reliably track FSHD disease activity and progression (Banerji et al., 2023; Hamel & Tawil, 2018).
 
-Clinical trials and next generation therapies:
-Clinical trials for FSHD are testing therapies that target causes for FSHD. Currently a clinical study on phase three has been reviewing the impact of the drug Del-brax, an investigational RNA therapy designed to reduce DUX4 expression, has shown positive biomarker results, highlighting a decrease in KHDC1L, a biomarker linked the DUX4 overexpression, and a decrease in creatine kinase, a biomarker resulting in in muscle damage. While treatments have not been developed, these results indicate potential areas of treatment development. Future trials and testing will be required to find treatments for FSHD. Current and future testing should continue to identify reliable biomarkers and determine whether these therapies improve quality of life and mobility. (FSHD Society, 2026)
+Clinical trials and next-generation therapies: Current FSHD clinical trials are evaluating therapies designed to target disease mechanisms such as abnormal DUX4 expression. Delpacibart braxlosiran (del-brax) is an investigational RNA-targeting therapy designed to reduce DUX4 expression. Biomarker results have shown changes in measurements related to DUX4 activity and muscle damage, while continued research is needed to determine whether these biological changes lead to meaningful improvements in function and quality of life (FSHD Society, 2026).
 
-Prevalence and Incidence:
-The prevalence of FSHD in individuals in the United States is 1 in 15,000, and worldwide 2.03 to 6.8 per 100,000 individuals. The incidence of FSHD worldwide is 1 in 14,000 however the true estimate may be lower. (FSHD Canada, n.d.; Statland & Tawil, 2016)
+Prevalence and Incidence: Estimates of FSHD prevalence vary between populations. Available estimates indicate that FSHD is a relatively common inherited muscular dystrophy, although mild or undiagnosed cases can make its true prevalence difficult to determine (FSHD Canada, n.d.; Statland & Tawil, 2016).
 
-Diagnosis:
-Diagnosis of FSHD is done through an evaluation by a neurologist or specialist in neuromuscular disorders. A patient is encouraged to seek testing after noticeable changes in their muscle strength or function. Identifiable traits are seen through muscle weakness in the face and shoulder blades. Testing is primarily completed through genetic testing to determine if the D4Z4 repeats have been shortened on chromosome 4q. In most cases. Genetic testing is able to confirm an FSHD diagnosis, however if inconclusive, blood tests, electromyography, or a muscle biopsy may be included in testing. (Muscular Dystrophy Association, n.d.)
-
-
+Diagnosis: Diagnosis of FSHD includes clinical evaluation by a neurologist or neuromuscular specialist and genetic testing. Characteristic patterns of muscle weakness, particularly involving the face and shoulder girdle, can suggest FSHD. Genetic testing can help confirm the diagnosis by examining the D4Z4 repeat region on chromosome 4q. Additional testing may be used when the diagnosis is unclear (Muscular Dystrophy Association, n.d.-b).
 
 ### Module 2 Analysis
+
 This project includes:
 
 - Exploration of the FSHD clinical dataset
-- Analysis of longitudinal measurements across baseline, Year 1, and Year 2
+- Analysis of measurements across baseline, Year 1, and Year 2
 - MRI analysis of the tibialis anterior muscle
 - Water and fat MRI image processing
-- Tibialis anterior segmentation using a muscle mask
+- Tibialis anterior segmentation using a binary muscle mask
 - Calculation of MRI fat fraction
-- Comparison of measurements across time points
-- Interpolation of measurements collected at uneven visit times
-- Statistical analysis of disease progression
+- Comparison of MRI measurements across locations and time points
+- Linear interpolation of fat fraction between sampled muscle locations
+- Comparison of MRI fat fraction and quantitative STIR
+- Standardized response mean calculations
+- Paired statistical testing of baseline-to-Year-1 changes
 - Evaluation of candidate exploratory clinical-trial endpoints
 
-### MRI Dataset
-The data set was based on a study cohort of 34 participants with FSHD who underwent functional studies, lower extremity MRI and bilateral biopsy of the tibialis anterior (TA) muscles. Participants were assessed at two timepoints, year one and two. Fat infiltration was calculated for each pixel by dividing the sum of the fat series intensity and water series signal intensities. AI- based segmentation was reviewed and evaluated by researchers for continued consistency of segmentation and to provide a final three dimensional label. Fiducial markers placed on the middle portion of the TA muscle were used to identify the muscle biopsy site. Fat infiltration was measured along the length of the muscle and expressed as a percentage. The provided csv data file features measurements such as DUX4 gene signatures, sex, age, dorsiflection strength, and clinical severity scores. This data source was from Wong et al. (2024).
+### Dataset and MRI Analysis
 
-### AI Usage Statement
-We utilized Chat GPT and (other?) tools to troubleshoot code during the development of this project and to help refine the clarity and wording of our written explanations. We used AI to determine the error that was occurring in our code and how to fix it. The AI tools also helped with some formatting and organizing of the code for better readability and maintainability.
+The primary clinical dataset contains 34 participants with FSHD who underwent assessments including lower-extremity MRI, functional testing, and bilateral tibialis anterior muscle biopsies. Participants were evaluated at baseline, Year 1, and Year 2. Because the visits were not conducted at exactly the same time for every participant, actual visit timing was recorded using `lag_months_baseline`, `lag_months_y1`, and `lag_months_y2`.
+
+The dataset contains variables including subject ID, sex, age, D4Z4 repeat length, DUX4-related biomarkers, MRI fat fraction, quantitative STIR measurements, dorsiflexion strength, functional tests, and clinical severity scores.
+
+A separate MRI example dataset contained one participant, UW_0020, measured at TP1 and TP2. Eight cross-sectional locations along the tibialis anterior were sampled at each time point, resulting in 16 MRI sections. Each section included a water image, fat image, and binary tibialis anterior segmentation mask.
+
+MRI fat fraction was calculated for each valid pixel as:
+
+**Fat Fraction (%) = 100 × Fat / (Water + Fat)**
+
+The segmentation mask was used to isolate the tibialis anterior so that fat fraction could be summarized specifically within the muscle. Mean fat fraction was calculated at each sampled location and compared between TP1 and TP2.
+
+Linear interpolation was then used to estimate fat fraction at locations between the directly sampled MRI sections. These interpolated values were estimates rather than new MRI measurements and were only calculated within the range of the observed data.
+
+### Biomarker Comparison
+
+MRI fat fraction and quantitative STIR were compared from baseline to Year 1. Nineteen participants had complete measurements for both biomarkers.
+
+Mean MRI fat fraction increased by approximately 1.33 percentage points from baseline to Year 1. The standardized response mean (SRM) for fat fraction was approximately 0.87, indicating a relatively consistent change compared with the variability between participants.
+
+Quantitative STIR showed substantially greater variability and little average directional change. Its SRM was approximately -0.009.
+
+Paired t-tests were also used to evaluate baseline-to-Year-1 changes. MRI fat fraction showed a statistically significant change (p ≈ 0.0014), while quantitative STIR did not show a statistically significant change (p ≈ 0.97).
+
+Based on this analysis, MRI fat fraction appeared to be the more consistent of the two imaging biomarkers for tracking FSHD progression in this dataset.
+
+### Conclusions
+
+The results suggest that MRI fat fraction may be useful as an exploratory biomarker for FSHD clinical trials. Fat fraction demonstrated measurable changes across MRI visits and showed a more consistent baseline-to-Year-1 pattern than quantitative STIR.
+
+However, additional evidence would be needed before using MRI fat fraction as a clinical-trial endpoint. Future studies should include larger patient groups, additional follow-up visits, and comparisons with functional outcomes such as muscle strength, mobility, and quality of life.
+
+MRI also has limitations related to cost and accessibility. For this reason, imaging biomarkers should be considered together with measurements that capture changes that are meaningful to patients.
 
 ### Future Limitations and Work
 
-A significant limitation of this project was the relatively small sample size, which likely contributed to the lack of statistically significant findings. The dataset was based off a study cohort of 34 participants with facioscapulohumeral muscular dystrophy (FSHD). While the dataset provided factors such as MRI scans and bilateral tibialis anterior muscle biopsies, the necessary generalizability of the data across patients with FSHD was not met as symptom severity and progression rate vary widely among individuals. 
+A significant limitation of this project was the relatively small sample size. Although the full dataset contained 34 participants, only 19 participants had complete baseline and Year 1 measurements for both MRI fat fraction and STIR. This limits the precision and generalizability of the biomarker comparison because FSHD severity and progression vary substantially between individuals.
 
-If more time was allotted to this project, further analysis could be conducted by evaluating another biomarker such as the DUX4 transcriptome signatures and comparing their efficacy against the MRI fat fraction and muscle strength. Assessing how these complementary biomarkers correlate with structural fat fraction over time could yield a more rounded and comprehensive understanding of early disease progression dynamics. 
+Other possible sources of uncertainty include MRI measurement variability, tibialis anterior segmentation, missing measurements, and assumptions made during interpolation.
 
-For future analysis, our research would focus on evaluating the clinical advancement of epigenetic and RNA target therapies developed to suppress the toxic DUX4 overexpression. Additionally, we would also research where improvements can be implemented regarding patient mobility and assistive devices. Given that an estimated 20% of individuals living with FSHD eventually require a wheelchair for mobility, further research in this area allows for developing potential enhancements in clinical trials. 
+With additional time and data, future analysis could include more participants, additional follow-up visits, other muscles, and additional biomarkers such as DUX4-related transcriptomic measurements. MRI fat fraction could also be compared more directly with muscle strength and functional outcomes.
 
+Future work could also investigate whether MRI fat fraction is sensitive to treatment response in clinical trials. Combining imaging, molecular, strength, functional, and patient-relevant measurements may provide a more complete picture of FSHD progression than relying on a single outcome measure.
 
-### References
-Aguirre, A. S., Astudillo Moncayo, O. M., Mosquera, J., Muyolema Arce, V. E., Gallegos, C., Ortiz, J. F., Andrade, A. F., Oña, S., & Buj, M. J. (2023). Treatment of facioscapulohumeral muscular dystrophy (FSHD): A systematic review. Cureus, 15(6), e39903. https://doi.org/10.7759/cureus.39903
+### AI Usage Statement
 
-Banerji, C. R. S., Greco, A., Joosten, L. A. B., van Engelen, B. G. M., & Zammit, P. S. (2023). The FSHD muscle–blood biomarker: A circulating transcriptomic biomarker for clinical severity in facioscapulohumeral muscular dystrophy. Brain Communications, 5(5), fcad221. https://doi.org/10.1093/braincomms/fcad221
-
-FSHD Canada. (n.d.). Incidence of FSHD. https://fshd.ca/overview/incidence-of-fshd/
-
-FSHD Society. (n.d.). Current trials and studies. https://www.fshdsociety.org/research-and-clinical-care/current-trials-and-studies/
-
-FSHD Society. (2026, June 11). Novartis announces positive biomarker results for del-brax in FSHD. https://www.fshdsociety.org/2026/06/11/novartis-announcement/
-
-Hamel, J., & Tawil, R. (2018). Facioscapulohumeral muscular dystrophy: Update on pathogenesis and future treatments. Neurotherapeutics, 15(4), 863–871. https://doi.org/10.1007/s13311-018-00675-3
-
-Muscular Dystrophy Association. (n.d.). Facioscapulohumeral muscular dystrophy (FSHD). https://www.mda.org/disease/facioscapulohumeral-muscular-dystrophy
-
-Muscular Dystrophy Association. (n.d.). Facioscapulohumeral muscular dystrophy (FSHD): Diagnosis. https://www.mda.org/disease/facioscapulohumeral-muscular-dystrophy/diagnosis
-
-Muscular Dystrophy Association. (n.d.). Signs and symptoms of facioscapulohumeral muscular dystrophy (FSHD). https://www.mda.org/disease/facioscapulohumeral-muscular-dystrophy/signs-and-symptoms
-
-Statland, J. M., & Tawil, R. (2016). Facioscapulohumeral muscular dystrophy. Continuum, 22(6), 1916–1931. https://doi.org/10.1212/CON.0000000000000399
+We used ChatGPT during development of this project to troubleshoot Python code, explain coding
